@@ -1,5 +1,109 @@
+# =========================
+# Python
+# =========================
+
 __pycache__/
 *.py[cod]
-*.egg-info/
+*$py.class
+*.so
+
+.env
+.env.*
+!.env.example
+
 .venv/
+venv/
+env/
+ENV/
+
 .pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# =========================
+# Node.js / Node-RED
+# =========================
+
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Node-RED local credentials and runtime files
+flows_cred.json
+.config.runtime.json
+.sessions.json
+.context/
+.node-red/
+
+# Keep exported, sanitized flows in source control.
+# Do not commit credentials or private runtime configuration.
+
+# =========================
+# OpenPLC / PLC build files
+# =========================
+
+*.o
+*.obj
+*.out
+*.exe
+*.dll
+*.so
+
+build/
+bin/
+generated/
+runtime-data/
+
+# =========================
+# Logs and generated data
+# =========================
+
+logs/
+*.log
+
+data/generated/
+data/runtime/
+data/*.db
+data/*.sqlite
+data/*.sqlite3
+
+reports/
+artifacts/
+
+# =========================
+# Test output
+# =========================
+
+.coverage
+htmlcov/
+test-results/
+junit.xml
+
+# =========================
+# IDE and editor files
+# =========================
+
+.vscode/
+.idea/
+.cursor/
+
+*.swp
+*.swo
+*~
+
+# =========================
+# Operating system files
+# =========================
+
+.DS_Store
+Thumbs.db
+desktop.ini
