@@ -1,0 +1,7 @@
+registers:
+  - name: conveyor_start
+    address: 0
+    type: coil
+  - name: conveyor_running
+    address: 1
+    type: discrete_input
